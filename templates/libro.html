@@ -8,12 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
           <span class="navbar-brand mb-0 h1">Libros</span>
         </div>
       </nav>
-      <h1>{{title}}</h1>
+      <div class="card mb-3">
+        <img src="https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2018/02/shutterstock_522019972.jpg" class="card-img-top" height="300" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{title}}</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nihil possimus quos ullam fugiat provident dolor ut ducimus optio. Consectetur voluptatem fugit odit fugiat eveniet aperiam magni possimus quo delectus.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      
+      <div class="container">
+        <a href={{ url_for("index") }} class="btn btn-primary">Volver</a>
+      </div>
     
 </body>
 </html>
